@@ -1,0 +1,76 @@
+.CatalogContainer__article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0 50px 0;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.CatalogContainer-img {
+  object-fit: contain;
+  width: 100%;
+  border-radius: 20px;
+}
+.CatalogContainer-Containerimg {
+  max-width: 700px;
+  border-radius: 20px;
+}
+.CatalogContainer-text {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.CatalogContainer-text__h3 {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+#Catalogirl {
+  color: #f1a2be;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white, 2px 2px 3px rgba(241, 162, 190, 0.5);
+}
+
+#Catalogboy {
+  color: #a5daff;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white, 2px 2px 3px rgba(165, 218, 255, 0.5);
+}
+
+#Cataloghome {
+  color: #5d4339;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white, 2px 2px 3px rgba(68, 49, 41, 0.5);
+}
+
+#Catalogfotomural {
+  color: #c29d66;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white, 2px 2px 3px rgba(130, 101, 58, 0.5);
+  font-size: 50px;
+}
+
+.CatalogContainer-text__p {
+  font-size: 20px;
+}
+.CatalogContainer-text__button {
+  background-color: #5d4339;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.CatalogContainer {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  background-color: rgba(241, 238, 232, 0.95);
+}

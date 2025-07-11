@@ -57,6 +57,7 @@
 
 .CatalogContainer-text__p {
   font-size: 20px;
+  text-align: center;
 }
 .CatalogContainer-text__button {
   background-color: #5d4339;
@@ -73,4 +74,18 @@
   gap: 30px;
   flex-direction: column;
   background-color: rgba(241, 238, 232, 0.95);
+}
+@media (max-width: 768px) {
+  .CatalogContainer-text__h3 {
+    font-size: 40px;
+  }
+  .CatalogContainer-text__p {
+    font-size: 16px;
+  }
+  .CatalogContainer-text__button {
+    font-size: 16px;
+  }
+  .CatalogContainer-Containerimg{
+    max-width: 350px;
+  }
 }

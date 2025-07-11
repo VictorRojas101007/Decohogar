@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
 .mainContainer {
-  height: 46rem;
   background-image: url(../assets/images/Fondo-Decohogar.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -10,7 +9,12 @@
   position: relative; /* Añadimos posición relativa */
   z-index: 0; /* Aseguramos que esté por debajo del header */
 }
-
+.appContainer{
+  height: 46rem;
+}
+.sectionContainer{
+  height: 30rem;
+}
 .mainContainer::after {
   content: "";
   position: absolute;
@@ -31,6 +35,10 @@
   margin-bottom: 10px; /* Reducir el margin-bottom para acercar más los spans */
   text-shadow: rgb(46, 30, 23) 2px 2px 5px;
 }
+.h1__alone{
+  margin-top: 100px;
+  font-size: 6em;
+}
 .vinil {
   font-family: "Caveat", cursive;
 }
@@ -40,4 +48,17 @@
   margin-top: 110px;
   position: relative; /* Aseguramos que el título esté por encima del fondo */
   z-index: 1;
+}
+.containerTitle{
+    display: flex;
+  flex-direction: column;
+  position: relative; /* Aseguramos que el título esté por encima del fondo */
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .mainContainer__h1 {
+    font-size: 4em;
+  }
+  
 }

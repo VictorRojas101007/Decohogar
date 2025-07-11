@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 import "../styles/Header.css";
 import searchLogo from "../assets/svg/search.svg";
 
@@ -25,20 +25,20 @@ const Header = () => {
   return (
     <header className="header">
       <div className="logo-container">
-        <p className="logo__p">Decohogar</p>
+        <p className="logo__p"><NavLink className="navLink" to={"/"}>Decohogar</NavLink></p>
       </div>
       <nav className="main-nav">
         <ul className="nav-list">
           {navItems.map((item, index) => (
             <li key={index} className="nav-item">
-              <Link
+              <NavLink
                 id={item.id}
                 to={item.path}
                 className="nav-link"
                 data-text={item.name}
               >
                 {item.name}
-              </Link>
+              </NavLink>
             </li>
           ))}
         </ul>

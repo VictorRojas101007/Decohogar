@@ -1,0 +1,31 @@
+.vinilContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #827153;
+}
+.vinilCard{
+    margin: 10px;
+    max-width: 800px;
+    background-color: #f1e5d7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.imgVinil{
+    border-radius: 10px;
+    height:550px;
+    width: 550px;
+    object-fit:cover;
+}
+@media (max-width: 768px) {
+    .imgVinil{
+        height: 300px;
+        width: 300px;
+    }
+}

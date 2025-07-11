@@ -1,0 +1,58 @@
+{ 
+    "vinilos":
+     [ 
+        { 
+            "idVinil": 1,
+             "strVinil": "Vinil Arbol con monos", 
+             "nameVinil": "Arbol con monos", 
+             "strImg": "https://drive.google.com/thumbnail?id=100-NIQQM66laoT0Ji50sE5mi24KRz5h4&sz=w1000", "strCategory": "grandes",
+             "strDescription": "Vinil de gran formato con una imagen de un arbol con monos",
+             "category": "Niños"
+         },
+         {
+             "idVinil": 2,
+             "strVinil": "Vinil Granja roja",
+             "nameVinil": "Granja Rojas",
+             "strImg": "https://drive.google.com/thumbnail?id=1I1s6tPrykNLFKizkvyeZ9IbRnnF9GZEU&sz=w1000", "strCategory": "grandes",
+             "strDescription": "Vinil de gran formato con una imagen de una granja roja",
+             "category": "Niñas"
+         }, 
+         { "idVinil": 3,
+          "strVinil": "Vinil Dinosaurios en una cuna",
+           "nameVinil": "Dinosaurio con cuna", 
+           "strImg": "https://drive.google.com/thumbnail?id=1gQj8h2F3TpJTJE18FSwcBHZPo04vTn8g&sz=w1000", "strCategory": "grandes",
+           "strDescription": "Vinil de gran formato con una imagen de un dinosaurio en una cuna",
+           "category": "Hogar"
+         }, 
+         {
+             "idVinil": 4,
+              "strVinil": "Vinil Zafari",
+              "nameVinil": "Arbol con pp",
+              "strImg": "https://drive.google.com/thumbnail?id=14Ipq9pQrst8YfOsgnb6XUv8dEl3Aloac&sz=w1000",
+              "strDescription":"Vinil de gran formato con una imagen de un dinosaurio en una cuna",
+              "category": "Niños"
+         }, 
+         { "idVinil": 5,
+          "strVinil": "Vinil Zafari",
+          "nameVinil": "Arbol con monos",
+          "strImg": "https://drive.google.com/thumbnail?id=1RJ5sJe-ELIP5TbFK-k7K0IHMBNxScJeA&sz=w1000",
+          "strDescription":"Vinil de gran formato con una imagen de un dinosaurio en una cuna",
+          "category": "Fotomurales" 
+         }, 
+         { "idVinil": 6,
+          "strVinil": "Vinil Zafari",
+          "nameVinil": "Arbol con monos",
+          "strImg": "https://drive.google.com/thumbnail?id=1_j9xlkTKYgeSH7fxgNyGckqok64FRV4g&sz=w1000",
+          "strDescription":"Vinil de gran formato con una imagen de un dinosaurio en una cuna",
+          "category": "Fotomurales" 
+         }, 
+         { 
+          "idVinil": 6,
+          "strVinil": "Vinil Zafari",
+          "nameVinil": "Arbol con cc",
+          "strImg": "https://drive.google.com/thumbnail?id=1cGi9ZvdnEvCis2yd6wNUJ7SToabNBTKK&sz=w1000",
+          "strDescription":"Vinil de gran formato con una imagen de un dinosaurio en una cuna",
+          "category": "Niños"
+         } 
+      ] 
+}

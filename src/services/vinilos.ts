@@ -1,4 +1,4 @@
-const pathFile="./public/vinilos.json"
+const pathFile="/vinilos.json" ;
 
 export function searchVinil(searchTerm: string){
     return fetch(pathFile)
@@ -9,7 +9,9 @@ export function searchVinil(searchTerm: string){
         return res.json();
     })
     .then((data)=>{
-        const filteredVinils = data.vinilos.filter((vinil: { strVinil: string })=>vinil.strVinil.toLowerCase().includes(searchTerm.toLowerCase()))
+        const filteredVinils = data.vinilos.filter((vinil: {  nameVinil: string })=>
+            vinil.nameVinil.toLowerCase().includes(searchTerm.toLowerCase())
+        )
         return filteredVinils.map((vinil: any) => ({
             id: vinil.idVinil,
             image: vinil.strImg,
@@ -36,7 +38,7 @@ export function getVinils(category: any){
                 image: vinil.strImg,
                 name: vinil.nameVinil,
                 description: vinil.strDescription,
-                price: "Consultar precio" // o agregar precio al JSON
+                price: "Consultar precio"
             }));
     });
 };

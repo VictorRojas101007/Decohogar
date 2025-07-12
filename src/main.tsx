@@ -1,4 +1,3 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
 import {
   createBrowserRouter,
@@ -7,6 +6,7 @@ import {
 import App from "./App";
 import "./index.css";
 import Category from "./Routes/Category";
+import React from "react";
 
 
 const router = createBrowserRouter([

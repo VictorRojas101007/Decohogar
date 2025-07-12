@@ -6,7 +6,6 @@ interface VinilContainerProps {
     category: string;
 }
 
-// Define la interfaz para el objeto vinyl
 interface Vinil {
     id: string | number;
     name: string;
@@ -17,7 +16,6 @@ interface Vinil {
 
 const VinilContainer = ({category}:VinilContainerProps) => {
 
-// Tipar el estado con la interfaz Vinil
 const [vinils, setVinils] = useState<Vinil[]>([]);
 
 useEffect(() => {

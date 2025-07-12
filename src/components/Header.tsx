@@ -8,12 +8,19 @@ interface NavItem {
   path: string;
   id: string;
 }
-
-const Header = () => {
+interface HeaderProps {
+  searchValue: string;
+  setSearchValue: (value: string) => void;
+}
+const Header = ({searchValue, setSearchValue}:HeaderProps) => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    setIsSearchOpen(!isSearchOpen);
+    if(searchValue.trim().length > 0){
+      return;
+    } else if(searchValue.trim().length === 0){
+      setIsSearchOpen(!isSearchOpen);
+    }
   };
   const navItems: NavItem[] = [
     { name: "Niñas", path: "/niñas", id: "girl" },
@@ -47,6 +54,8 @@ const Header = () => {
         <input
           type="text"
           placeholder="Buscar productos..."
+          value={searchValue}
+          onChange={(e) => setSearchValue(e.target.value)}
           className={isSearchOpen ? "search-input block" : "search-input none"}
         />
         <button onClick={handleClick} className="search-button">

@@ -2,23 +2,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
-  padding: 50px 0 50px 0;
+  padding: 3.125rem 0 3.125rem 0;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 2.5rem;
 }
 .CatalogContainer-img {
   object-fit: contain;
   width: 100%;
-  border-radius: 20px;
+  border-radius: 1.25rem;
 }
 .CatalogContainer-Containerimg {
-  max-width: 700px;
-  border-radius: 20px;
+  max-width: 43.75rem;
+  border-radius: 1.25rem;
 }
 .CatalogContainer-text {
-  max-width: 400px;
+  max-width: 25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,67 +26,67 @@
 }
 .CatalogContainer-text__h3 {
   text-align: center;
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: .625rem;
 }
 #Catalogirl {
   color: #f1a2be;
-  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
-    1px 1px 0 white, 2px 2px 3px rgba(241, 162, 190, 0.5);
+  text-shadow: -0.0625rem -0.0625rem 0 white, .0625rem -0.0625rem 0 white, -0.0625rem .0625rem 0 white,
+    .0625rem .0625rem 0 white, .125rem .125rem .1875rem rgba(241, 162, 190, 0.5);
 }
 
 #Catalogboy {
   color: #a5daff;
-  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
-    1px 1px 0 white, 2px 2px 3px rgba(165, 218, 255, 0.5);
+  text-shadow: -0.0625rem -0.0625rem 0 white, .0625rem -0.0625rem 0 white, -0.0625rem .0625rem 0 white,
+    .0625rem .0625rem 0 white, .125rem .125rem .1875rem rgba(165, 218, 255, 0.5);
 }
 
 #Cataloghome {
   color: #5d4339;
-  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
-    1px 1px 0 white, 2px 2px 3px rgba(68, 49, 41, 0.5);
+  text-shadow: -0.0625rem -0.0625rem 0 white, .0625rem -0.0625rem 0 white, -0.0625rem .0625rem 0 white,
+    .0625rem .0625rem 0 white, .125rem .125rem .1875rem rgba(68, 49, 41, 0.5);
 }
 
 #Catalogfotomural {
   color: #c29d66;
-  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
-    1px 1px 0 white, 2px 2px 3px rgba(130, 101, 58, 0.5);
-  font-size: 50px;
+  text-shadow: -0.0625rem -0.0625rem 0 white, .0625rem -0.0625rem 0 white, -0.0625rem .0625rem 0 white,
+    .0625rem .0625rem 0 white, .125rem .125rem .1875rem rgba(130, 101, 58, 0.5);
+  font-size: 3.125rem;
 }
 
 .CatalogContainer-text__p {
-  font-size: 20px;
+  font-size: 1.25rem;
   text-align: center;
 }
 .CatalogContainer-text__button {
   background-color: #5d4339;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   border: none;
   color: white;
-  font-size: 20px;
-  padding: 10px 20px;
-  margin-top: 20px;
+  font-size: 1.25rem;
+  padding: .625rem 1.25rem;
+  margin-top: 1.25rem;
   cursor: pointer;
   text-decoration: none;
 }
 .CatalogContainer {
   display: flex;
-  gap: 30px;
+  gap: 1.875rem;
   flex-direction: column;
   background-color: rgba(241, 238, 232, 0.95);
 }
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .CatalogContainer-text__h3 {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
   .CatalogContainer-text__p {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .CatalogContainer-text__button {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .CatalogContainer-Containerimg{
-    max-width: 350px;
+    max-width: 21.875rem;
   }
 }

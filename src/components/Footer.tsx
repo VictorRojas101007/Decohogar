@@ -45,10 +45,10 @@ const Footer = () => {
           <a href="">
             <img src={whatsapp} width="30px" alt="" />
           </a>
-          <a href="">
+          <a href="https://www.instagram.com/decohogar_vinilos" target="_blank" rel="noopener noreferrer">
             <img src={instagram} width="30px" alt="" />
           </a>
-          <a href="">
+          <a href="https://www.facebook.com/decohogarvinilos" target="_blank" rel="noopener noreferrer">
             <img src={facebook} width="30px" alt="" />
           </a>
         </div>

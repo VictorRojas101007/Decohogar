@@ -147,6 +147,8 @@
   outline: none;
   background-color: rgba(241, 234, 222, 0.95);
   box-shadow: inset .125rem .125rem .3125rem rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+  color: #4d3a2d;
 }
 .search-button {
   background-color: rgba(241, 234, 222, 0.95);
@@ -161,11 +163,10 @@
 .search-logo {
   margin: 0;
 }
-.block {
-  display: block;
-}
-.none {
-  display: none;
+@media (max-width: 500px) {
+   .search-input {
+    width: 4rem;
+  }
 }
 @media (max-width: 53.125rem) {
   .header {
@@ -194,9 +195,6 @@
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-  }
-  .search-input {
-    width: 8.125rem;
   }
   .nav-list {
     gap: 1.25rem;

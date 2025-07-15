@@ -2,6 +2,7 @@ import { useState } from "react";
 import {  NavLink } from "react-router-dom";
 import "../styles/Header.css";
 import searchLogo from "../assets/svg/search.svg";
+import { motion, AnimatePresence } from 'framer-motion';
 
 interface NavItem {
   name: string;
@@ -51,13 +52,21 @@ const Header = ({searchValue, setSearchValue}:HeaderProps) => {
         </ul>
       </nav>
       <form className="search-container">
-        <input
-          type="text"
-          placeholder="Buscar productos..."
-          value={searchValue}
-          onChange={(e) => setSearchValue(e.target.value)}
-          className={isSearchOpen ? "search-input block" : "search-input none"}
-        />
+        <AnimatePresence>
+          {isSearchOpen && (
+            <motion.input
+              type="text"
+              placeholder="Buscar productos..."
+              value={searchValue}
+              onChange={(e) => setSearchValue(e.target.value)}
+              className="search-input"
+              initial={{ width: 0, opacity: 0, x: -20 }}
+              animate={{ width: 140, opacity: 1, x: 0 }}
+              exit={{ width: 0, opacity: 0, x: -20 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+            />
+          )}
+        </AnimatePresence>
         <button onClick={handleClick} className="search-button">
           <img
             src={searchLogo}

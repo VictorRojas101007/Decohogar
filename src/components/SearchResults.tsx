@@ -41,7 +41,9 @@ const SearchResults = ({ searchValue }: SearchResultsProps) => {
     if (searchValue.trim() && vinils.length === 0) {
         return (
             <div className={V.notFoundContainer}>
-                <p>No se encontraron productos que coincidan con "{searchValue}"</p>
+                <div className={V.descriptionContainer}>
+                <p className={V.descriptionNotFound}>No se encontraron productos que coincidan con "{searchValue}"</p>
+                </div>
             </div>
         );
     }

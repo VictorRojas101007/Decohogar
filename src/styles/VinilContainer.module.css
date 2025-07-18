@@ -1,13 +1,21 @@
-.vinilContainer{
+.vinilContainer, .skeleton-container{
     padding:1.25rem 0 ;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background-color: #827153;
+    align-items: center;
+    gap: 1.25rem;
+}
+.vinilCard:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
 }
 .vinilCard{
     margin: .625rem;
-    max-width: 25rem;
+    width: 25rem;
+    height: 33rem;
     background-color: #f1e5d7;
     border-radius: .625rem;
     box-shadow: 0 0 .625rem rgba(0, 0, 0, 0.2);
@@ -20,10 +28,35 @@
 }
 .imgVinil{
     border-radius: .625rem;
-    height:18.75rem;
+    height: 18.75rem;
     width: 18.75rem;
-    object-fit:cover;
+    object-fit: cover;
+    object-position: center;
+    background-color: #a8a1a1; /* Color de fondo mientras carga */
+    transition: opacity 0.3s ease;
 }
+
+/* Mejora para responsive */
+/* @media (max-width: 768px) {
+    .vinilCard{
+        width: 22rem;
+        margin: 0.5rem;
+    }
+    .imgVinil{
+        height: 12.5rem;
+        width: 12.5rem;
+    }
+} */
+
+/* @media (max-width: 480px) {
+    .vinilCard{
+        width: 16rem;
+    }
+    .imgVinil{
+        height: 10rem;
+        width: 10rem;
+    }
+} */
 .notFoundContainer{
     display: flex;
     justify-content: center;
@@ -37,7 +70,7 @@
 }
 @media (max-width: 768px) {
     .vinilCard{
-        max-width: 18.75rem;
+        max-width: 25rem;
     }
     .imgVinil{
         height:12.5rem;

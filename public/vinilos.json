@@ -4,47 +4,47 @@
         { 
             "idVinil": 1,
              "strVinil": "Vinil Arbol con monos", 
-             "nameVinil": "Arbol con monos", 
-             "strImg": "https://drive.google.com/thumbnail?id=100-NIQQM66laoT0Ji50sE5mi24KRz5h4&sz=w1000", "strCategory": "grandes",
+             "nameVinil": "Zafarí en arbol", 
+             "strImg": "https://res.cloudinary.com/dkabtliuk/image/upload/v1752612550/DCV-19_tqlrv4.jpg", 
              "strDescription": "Vinil de gran formato con una imagen de un arbol con monos",
              "category": "Niños"
          },
          {
              "idVinil": 2,
              "strVinil": "Vinil Granja roja",
-             "nameVinil": "Granja Rojas",
-             "strImg": "https://drive.google.com/thumbnail?id=1I1s6tPrykNLFKizkvyeZ9IbRnnF9GZEU&sz=w1000", "strCategory": "grandes",
+             "nameVinil": "Granja Roja",
+             "strImg": "https://res.cloudinary.com/dkabtliuk/image/upload/v1752612597/DCV-11_tn4ybt.jpg", 
              "strDescription": "Vinil de gran formato con una imagen de una granja roja",
-             "category": "Niñas"
+             "category": "Niños"
          }, 
          { "idVinil": 3,
           "strVinil": "Vinil Dinosaurios en una cuna",
            "nameVinil": "Dinosaurio con cuna", 
-           "strImg": "https://drive.google.com/thumbnail?id=1gQj8h2F3TpJTJE18FSwcBHZPo04vTn8g&sz=w1000", "strCategory": "grandes",
+           "strImg": "https://res.cloudinary.com/dkabtliuk/image/upload/v1752612593/DCV-22_dehh4p.jpg", 
            "strDescription": "Vinil de gran formato con una imagen de un dinosaurio en una cuna",
-           "category": "Hogar"
+           "category": "Niños"
          }, 
          {
              "idVinil": 4,
               "strVinil": "Vinil Zafari",
-              "nameVinil": "Arbol con pp",
-              "strImg": "https://drive.google.com/thumbnail?id=14Ipq9pQrst8YfOsgnb6XUv8dEl3Aloac&sz=w1000",
+              "nameVinil": "Zafari sobre Cuna",
+              "strImg": "https://res.cloudinary.com/dkabtliuk/image/upload/v1752612527/11_wdyxjo.jpg",
               "strDescription":"Vinil de gran formato con una imagen de un dinosaurio en una cuna",
               "category": "Niños"
          }, 
          { "idVinil": 5,
           "strVinil": "Vinil Zafari",
-          "nameVinil": "Arbol con monos",
-          "strImg": "https://drive.google.com/thumbnail?id=1RJ5sJe-ELIP5TbFK-k7K0IHMBNxScJeA&sz=w1000",
+          "nameVinil": "Zafari sobre Cama",
+          "strImg": "https://res.cloudinary.com/dkabtliuk/image/upload/v1752612539/DCV-01_hto8he.jpg",
           "strDescription":"Vinil de gran formato con una imagen de un dinosaurio en una cuna",
-          "category": "Fotomurales" 
+          "category": "Niños" 
          }, 
          { "idVinil": 6,
           "strVinil": "Vinil Zafari",
           "nameVinil": "Arbol con monos",
           "strImg": "https://drive.google.com/thumbnail?id=1_j9xlkTKYgeSH7fxgNyGckqok64FRV4g&sz=w1000",
           "strDescription":"Vinil de gran formato con una imagen de un dinosaurio en una cuna",
-          "category": "Fotomurales" 
+          "category": "Niños" 
          }, 
          { 
           "idVinil": 6,
@@ -53,6 +53,150 @@
           "strImg": "https://drive.google.com/thumbnail?id=1cGi9ZvdnEvCis2yd6wNUJ7SToabNBTKK&sz=w1000",
           "strDescription":"Vinil de gran formato con una imagen de un dinosaurio en una cuna",
           "category": "Niños"
-         } 
+         },
+         {
+          "idVinil": 7,
+          "strVinil": "Vinil Hada",
+          "nameVinil": "Hada en la pared",
+          "strImg": "https://res.cloudinary.com/dkabtliuk/image/upload/v1752612162/DC-03_n82sxp.jpg",
+          "strDescription": "Vinil de gran formato con una imagen de una hada en la pared",
+          "category": "Niñas"
+         },
+         {
+          "idVinil": 8,
+          "strVinil": "Vinil familiar en pared",
+          "nameVinil": "Family Home",
+          "strImg":"https://res.cloudinary.com/dkabtliuk/image/upload/v1752612383/sdftg_rulbh5.jpg",
+          "strDescription": "Vinil de gran formato con una imagen de una familia en la pared",
+          "category": "Hogar"
+         },
+         {
+          "idVinil": 9,
+          "strVinil": "Vinil familiar en pared",
+          "nameVinil": "Family Home",
+          "strImg":"https://res.cloudinary.com/dkabtliuk/image/upload/v1752612394/Sin_t%C3%ADtulo-2_xmfi2y.jpg",
+          "strDescription": "Vinil de gran formato con una imagen de una familia en la pared",
+          "category": "Hogar"
+         },
+         {
+          "idVinil": 10,
+          "strVinil": "Vinil universo espacio",
+          "nameVinil": "Universo sobre Cama",
+          "strImg":"https://res.cloudinary.com/dkabtliuk/image/upload/v1752612605/DCV-23_dtme8i.jpg",
+          "strDescription": "Vinil de gran formato con una imagen de un universo en una cama",
+          "category": "Fotomurales"
+         },
+         {
+          "idVinil": 11,
+          "strVinil": "Zafari Benjamin arbol",
+          "nameVinil": "Amigos de la Selva",
+          "strImg":"https://res.cloudinary.com/dkabtliuk/image/upload/v1752612558/benjamin_vyi3on.jpg",
+          "strDescription": "Animales tiernos reunidos bajo un árbol, creando un ambiente cálido y amigable.",
+          "category": "Niños"
+         },
+         {
+          "idVinil": 12,
+          "strVinil": "Zafari arbol",
+          "nameVinil": "Aventura Salvaje",
+          "strImg":"https://res.cloudinary.com/dkabtliuk/image/upload/v1752612595/DCV-12_pn63c6.jpg",
+          "strDescription": "Un viaje divertido por la jungla con compañeros animales.",
+          "category": "Niños"
+         },
+         {
+          "idVinil": 13,
+          "strVinil": "Dinosaurios cactus arbol",
+          "nameVinil": "Jungla de Sueños",
+          "strImg":"https://res.cloudinary.com/dkabtliuk/image/upload/v1752612594/DCV-15_jo2yka.jpg",
+          "strDescription": "Naturaleza y ternura que acompañan el descanso infantil.",
+          "category": "Niños"
+         },
+         {
+            "idVinil":14,
+            "strVinil":"Zafari arbol animales",
+            "nameVinil":"Exploradores del Árbol",
+            "strImg":"https://res.cloudinary.com/dkabtliuk/image/upload/v1752612592/dominic_zehohc.jpg",
+            "strDescription":"Animales curiosos que habitan un árbol lleno de sorpresas.",
+            "category":"Niños"
+         },
+         {
+            "idVinil":15,
+            "strVinil":"Zafari arbol animales",
+            "nameVinil":"Selva Mágica",
+            "strImg":"https://res.cloudinary.com/dkabtliuk/image/upload/v1752612598/DCV-08_lahlr1.jpg",
+            "strDescription":"Animales curiosos que habitan un árbol lleno de sorpresas.",
+            "category":"Niños"
+         },
+         {
+            "idVinil":16,
+            "strVinil":"Zafari animales",
+            "nameVinil":"Estrellas y sonrisas",
+            "strImg":"https://res.cloudinary.com/dkabtliuk/image/upload/v1752612558/VINIL_ANIMALES_NORDICOSS_zmgbue.jpg",
+            "strDescription":"Estrellas de colores y animales adorables que alegran el espacio infantil.",
+            "category":"Niños"
+         },
+         {
+            "idVinil":17,
+            "strVinil":"Zafari globos antonio",
+            "nameVinil":"Exploradores del bosque",
+            "strImg":"https://res.cloudinary.com/dkabtliuk/image/upload/v1752612557/HHH_jft4sc.jpg",
+            "strDescription":"Animales del bosque y la sabana se reúnen en una decoración encantadora que celebra la curiosidad infantil.",
+            "category":"Niños"
+         },
+         {
+            "idVinil":18,
+            "strVinil":"Zafari cuna luciano",
+            "nameVinil":"Amigos de la selva en casa",
+            "strImg":"https://res.cloudinary.com/dkabtliuk/image/upload/v1752612531/111_s7zlfo.jpg",
+            "strDescription":"Un círculo de animales adorables decora la pared, creando un ambiente cålido y divertido para los més pequeöos.",
+            "category":"Niños"
+         },
+         {
+            "idVinil":19,
+            "strVinil":"nubes santiago mickey cuna",
+            "nameVinil":"Sueños en la luna",
+            "strImg":"https://res.cloudinary.com/dkabtliuk/image/upload/v1752612516/dffffggh_dj2dwy.jpg",
+            "strDescription":"Un ratoncito dormido sobre una luna creciente decora la pared, creando un ambiente sereno y mågico.",
+            "category":"Niños"
+         },
+         {
+            "idVinil":20,
+            "strVinil":"mickey cuna estrellas luna ruben",
+            "nameVinil":"Cuna bajo el cielo de fantasía",
+            "strImg":"https://res.cloudinary.com/dkabtliuk/image/upload/v1752612518/ffggy_ivzbh7.jpg",
+            "strDescription":"Una habitaci6n infantil con tonos suaves y detalles celestiales que invitan al descanso y la imaginaciön.",
+            "category":"Niños"
+         },
+         {
+            "idVinil":21,
+            "strVinil":"nubes estrellas elefante emilio celeste cuna",
+            "nameVinil":"Un rincón para soñar despierto",
+            "strImg":"https://res.cloudinary.com/dkabtliuk/image/upload/v1752612530/444_gm4xjm.jpg",
+            "strDescription":"La mezcla de luna, estrellas y nubes crea un espacio encantador para los primeros sueños de la infancia.",
+            "category":"Niños"  
+         },
+         {
+            "idVinil":22,
+            "strVinil":"luna estrellas cuna",
+            "nameVinil":"Noche estrellada para bebés",
+            "strImg":"https://res.cloudinary.com/dkabtliuk/image/upload/v1752612532/DCV-20_wmvo3r.jpg",
+            "strDescription":"Estrellas, nubes y una luna acogedora envuelven la cuna en una atmósfera de dulzura y tranquilidad.",
+            "category":"Niños"
+         },
+         {
+            "idVinil":23,
+           "strVinil":"luna estrellas rosado amy anyely cuna",
+            "nameVinil":"Noche estrellada para bebés",
+            "strImg":"https://res.cloudinary.com/dkabtliuk/image/upload/v1752612162/DC-16_hmu0eb.jpg",
+            "strDescription":"Estrellas, nubes y una luna acogedora envuelven la cuna en una atmósfera de dulzura y tranquilidad.",
+            "category":"Niñas"
+         },
+         {
+            "idVinil":24,
+            "strVinil":"elefante luna estrellas amarillo samantha ariana nubes",
+            "nameVinil":"Decoración lunar para pequeños soñadores",
+            "strImg":"https://res.cloudinary.com/dkabtliuk/image/upload/v1752612139/DC-39_kkkkjq.jpg",      
+            "strDescription":"Un elefancito sobre una luna creciente decora la pared, creando un ambiente sereno y mágico.",
+            "category":"Niñas"
+         }
       ] 
 }

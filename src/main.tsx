@@ -7,6 +7,7 @@ import App from "./App";
 import "./index.css";
 import Category from "./Routes/Category";
 import React from "react";
+import TermsAndConditions from "./Routes/TermsAndConditions";
 
 
 const router = createBrowserRouter([
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
     path: "/fotomurales",
     element: <Category category="Fotomurales" />,
   },
+  {
+    path:"/terminos-y-condiciones",
+    element: <TermsAndConditions/>
+  }
 ]);
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

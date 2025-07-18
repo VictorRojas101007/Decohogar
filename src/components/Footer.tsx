@@ -5,6 +5,7 @@ import instagram from "../assets/svg/socialMedia/instagram.svg";
 import whatsapp from "../assets/svg/socialMedia/whatsapp.svg";
 import DecohogarLogo from "../assets/svg/search.svg";
 import "../styles/Footer.css"; // Asegúrate de crear este archivo CSS
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -28,7 +29,8 @@ const Footer = () => {
         <div className="FooterAboutUs Footer-width">
           <h3>Sobre Nosotros</h3>
           <ul className="Footer_ul">
-            <li className="FooterAboutUs__li">Condiciones de compra</li>
+            <li className="FooterAboutUs__li">
+              <NavLink className={"navLink"} to={"/terminos-y-condiciones"}> Condiciones de compra</NavLink></li>
             <li className="FooterAboutUs__li">Quienes Somos</li>
             <li className="FooterAboutUs__li">Misión</li>
           </ul>

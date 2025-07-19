@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { searchVinil } from "../services/vinilos";
 import V from "../styles/VinilContainer.module.css";
+import Skeleton from "./Skeleton";
 
 interface SearchResultsProps {
     searchValue: string;
@@ -37,6 +38,10 @@ const SearchResults = ({ searchValue }: SearchResultsProps) => {
             setVinils([]);
         }
     }, [searchValue]);
+
+    if (loading) {
+        return <Skeleton />;
+    }
 
     if (searchValue.trim() && vinils.length === 0) {
         return (

@@ -1,17 +1,24 @@
 .vinilContainer, .skeleton-container{
     padding:1.25rem 0 ;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
     background-color: #827153;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: 1.25rem;
 }
-.vinilCard:hover{
-    cursor: pointer;
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
-}
+
 .vinilCard{
     margin: .625rem;
     width: 25rem;
@@ -21,9 +28,22 @@
     box-shadow: 0 0 .625rem rgba(0, 0, 0, 0.2);
     padding: 1.25rem;
     text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 .imgVinil{
@@ -37,34 +57,26 @@
 }
 
 /* Mejora para responsive */
-/* Descomenta y mejora las media queries */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .vinilCard{
         width: 22rem;
         margin: 0.5rem;
-        /* Reduce la altura en móviles */
-        height: 28rem;
     }
     .imgVinil{
         height: 12.5rem;
         width: 12.5rem;
     }
-}
+} */
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     .vinilCard{
         width: 16rem;
-        height: 24rem;
     }
     .imgVinil{
         height: 10rem;
         width: 10rem;
     }
-    .vinilContainer {
-        gap: 0.8rem;
-        padding: 0.8rem 0;
-    }
-}
+} */
 .notFoundContainer{
     display: flex;
     justify-content: center;

@@ -163,12 +163,13 @@
 .search-logo {
   margin: 0;
 }
-@media (max-width: 500px) {
-   .search-input {
-    width: 4rem;
-  }
-}
+
 @media (max-width: 53.125rem) {
+
+.search-input{
+  width: 6rem;
+}
+
   .header {
     padding: .625rem 1.25rem 0 1.25rem;
     display: grid;
@@ -199,5 +200,8 @@
   .nav-list {
     gap: 1.25rem;
     margin-top: .0625rem;
+  }
+  .nav-link{
+    font-size: 1.2rem;
   }
 }

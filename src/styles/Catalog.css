@@ -80,6 +80,14 @@
   .CatalogContainer-text__h3 {
     font-size: 2.5rem;
   }
+  .CatalogContainer-text{
+    max-width: 18.75rem;
+    text-align: center;
+    
+  } 
+  .CatalogContainer-text__h3#Catalogfotomural{
+    font-size: 2.5rem;
+  }
   .CatalogContainer-text__p {
     font-size: 1rem;
   }

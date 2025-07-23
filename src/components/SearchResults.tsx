@@ -58,7 +58,7 @@ const SearchResults = ({ searchValue }: SearchResultsProps) => {
             {vinils.map((vinil) => {
                 return (
                     <div className={V.vinilCard} key={vinil.id}>
-                        <img className={V.imgVinil} src={vinil.image} alt={vinil.name} />
+                        <img className={V.imgVinil} src={vinil.image} alt={vinil.name} loading="lazy" decoding="async" />
                         <h2>{vinil.name}</h2>
                         <p>{vinil.description}</p>
                         <p>Precio: {vinil.price}</p>

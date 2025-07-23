@@ -1,10 +1,6 @@
 @font-face {
   font-family: "Kalopsia";
   src: url("../assets/fonts/Kalopsia/Kalopsia}ttf.ttf") format("truetype");
-  /* Puedes agregar más formatos si tienes diferentes versiones de la fuente */
-  /* src: url('../assets/fonts/tu-fuente.woff2') format('woff2'),
-       url('../assets/fonts/tu-fuente.woff') format('woff'),
-       url('../assets/fonts/tu-fuente.ttf') format('truetype'); */
   font-weight: normal;
   font-style: normal;
 }
@@ -19,10 +15,8 @@
   display: flex;
   justify-content: space-around;
   padding: .3125rem 0 .3125rem 0;
-  width: 100%; /* Asegura que ocupe todo el ancho */
-  box-sizing: border-box; /* Incluye padding en el ancho total */
-  overflow-x: hidden; /* Evita scroll horizontal */
-  max-width: 100vw; /* No excede el viewport */
+  box-sizing: border-box; 
+  overflow-x: hidden; 
 }
 .logo-container {
   height: 4.875rem;
@@ -178,10 +172,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 0.5fr;
-    width: 100%;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    max-width: 100vw;
   }
   .logo-container {
     font-size: 2.2rem; /* Reducir ligeramente el tamaño */

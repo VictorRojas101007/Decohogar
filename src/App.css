@@ -2,34 +2,37 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  overflow-x: hidden; /* Evita scroll horizontal */
+  -webkit-overflow-scrolling: touch; /* Scroll suave en iOS/Android */
 }
 
 .app-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden; /* Evita scroll horizontal */
+  position: relative;
 }
 
 .content {
   flex: 1;
   min-height: 18.75rem;
+  overflow-x: hidden;
 }
 
-/* #root {
-  background-image: url("../src/assets/images/Fondo-Decohogar.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
-  width: 100%;
-  position: relative;
-} */
-/* #root::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-} */
+/* Arreglo específico para Android */
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Scroll suave para toda la página */
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}

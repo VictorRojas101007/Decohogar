@@ -1,6 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import { getVinilsByCategory } from '../services/vinilos';
 import Skeleton from './Skeleton';
+import OptimizedImage from './OptimizedImage';
 import V from '../styles/VinilContainer.module.css';
 
 const VinilContainer = ({ category }: { category: string; }) => {
@@ -11,8 +12,8 @@ const VinilContainer = ({ category }: { category: string; }) => {
   } = useQuery({
     queryKey: ['vinils', category],
     queryFn: () => getVinilsByCategory(category),
-    staleTime: 5 * 60 * 1000, // 5 minutos
-    gcTime: 10 * 60 * 1000, // 10 minutos
+    staleTime: 10 * 60 * 1000, // Aumentado a 10 minutos
+    gcTime: 30 * 60 * 1000, // Aumentado a 30 minutos
   });
 
   if (isLoading) return <Skeleton />;
@@ -20,14 +21,20 @@ const VinilContainer = ({ category }: { category: string; }) => {
 
   return (
     <section className={V.vinilContainer}>
-      {vinils.map((vinil: { id: number; image: string; name: string; description: string; price: string; }) => (
+      {vinils.map((vinil: { 
+        id: number; 
+        image: string; 
+        name: string; 
+        description: string; 
+        price: string; 
+      }) => (
         <article className={V.vinilCard} key={vinil.id}>
-          <img 
-            className={V.imgVinil} 
-            src={vinil.image} 
-            alt={vinil.name} 
-            loading="lazy" 
-            decoding="async" 
+          <OptimizedImage
+            src={vinil.image}
+            alt={vinil.name}
+            className={V.imgVinil}
+            width={400}
+            height={300}
           />
           <h2>{vinil.name}</h2>
           <p>{vinil.description}</p>

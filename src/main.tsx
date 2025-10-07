@@ -39,7 +39,18 @@ const router = createBrowserRouter([
   }
 ]);
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: 5 * 60 * 1000, // 5 minutos por defecto
+      gcTime: 10 * 60 * 1000, // 10 minutos por defecto
+      retry: 2, // Reintentar 2 veces en caso de error
+      retryDelay: attemptIndex => Math.min(1000 * 2 ** attemptIndex, 30000),
+      refetchOnWindowFocus: false, // No refetch al cambiar de ventana
+      refetchOnReconnect: true, // Refetch al reconectar internet
+    },
+  },
+});
 
 
 ReactDOM.createRoot(document.getElementById("root")!).render(

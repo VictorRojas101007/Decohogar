@@ -9,6 +9,7 @@ import "./index.css";
 import Category from "./Routes/Category";
 import React from "react";
 import TermsAndConditions from "./Routes/TermsAndConditions";
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
 
 const router = createBrowserRouter([
@@ -45,6 +46,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
       <RouterProvider router={router} />
+      <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   </React.StrictMode>
 );

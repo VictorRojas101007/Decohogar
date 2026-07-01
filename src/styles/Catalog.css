@@ -30,6 +30,13 @@
   font-weight: 700;
   margin-bottom: .625rem;
 }
+
+#Cataloghot{
+  color: #C29D66;
+  text-shadow: -0.0625rem -0.0625rem 0 white, 0.0625rem -0.0625rem 0 white, -0.0625rem 0.0625rem 0 white, 
+    0.0625rem 0.0625rem 0 white,0.125rem 0.125rem 0.1875rem rgba(125, 78, 44, 0.25);
+}
+
 #Catalogirl {
   color: #f1a2be;
   text-shadow: -0.0625rem -0.0625rem 0 white, .0625rem -0.0625rem 0 white, -0.0625rem .0625rem 0 white,

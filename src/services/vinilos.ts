@@ -1,5 +1,12 @@
 const pathFile = "/vinilos.json";
 
+const normalizeCategory = (value: string = "") =>
+  value
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .trim();
+
 const optimizeCloudinaryUrl = (originalUrl: string, width = 400, quality = 'auto') => {
   // Extraer el public_id de la URL de Cloudinary
   const urlParts = originalUrl.split('/upload/');
@@ -20,8 +27,18 @@ export const fetchVinilos = async () => {
 
 export const getVinilsByCategory = async (category: string) => {
   const data = await fetchVinilos();
+  const normalizedRequestedCategory = normalizeCategory(category);
+
   return data.vinilos
-    .filter((vinil: { category: string; }) => vinil.category === category)
+    .filter((vinil: { category?: string; categories?: string[] }) => {
+      const categories = Array.isArray(vinil.categories)
+        ? vinil.categories
+        : vinil.category
+          ? [vinil.category]
+          : [];
+
+      return categories.some((vinilCategory) => normalizeCategory(vinilCategory) === normalizedRequestedCategory);
+    })
     .map((vinil: { idVinil: number; strImg: string; nameVinil: string; strDescription: string; }) => ({
       id: vinil.idVinil,
       image: optimizeCloudinaryUrl(vinil.strImg, 400),

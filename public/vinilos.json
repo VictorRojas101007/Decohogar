@@ -7,7 +7,8 @@
              "nameVinil": "Zafarí en arbol", 
              "strImg": "https://res.cloudinary.com/dkabtliuk/image/upload/v1752612550/DCV-19_tqlrv4.jpg", 
              "strDescription": "Vinil de gran formato con una imagen de un arbol con monos",
-             "category": "Niños"
+             "category": "Niños",
+             "categories": ["Niños", "los más vendidos"]
          },
          {
              "idVinil": 2,

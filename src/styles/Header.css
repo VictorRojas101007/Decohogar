@@ -84,6 +84,13 @@
 }
 
 /* Mantener los efectos hover existentes pero mejorarlos */
+
+#bestseller:hover {
+  color: #C29D66;
+  text-shadow: -0.0625rem -0.0625rem 0 white, 0.0625rem -0.0625rem 0 white, -0.0625rem 0.0625rem 0 white, 
+    0.0625rem 0.0625rem 0 white,0.125rem 0.125rem 0.1875rem rgba(125, 78, 44, 0.25);
+}
+
 #boy:hover {
   color: #a5daff;
   text-shadow: -0.0625rem -0.0625rem 0 white, .0625rem -0.0625rem 0 white, -0.0625rem .0625rem 0 white,

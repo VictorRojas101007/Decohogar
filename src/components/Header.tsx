@@ -24,6 +24,8 @@ const Header = ({searchValue, setSearchValue}:HeaderProps) => {
     }
   };
   const navItems: NavItem[] = [
+    { name: "Tendencias", path: "/los-más-vendidos", id: "bestseller"
+    },
     { name: "Niñas", path: "/niñas", id: "girl" },
     { name: "Niños", path: "/niños", id: "boy" },
     { name: "Hogar", path: "/hogar", id: "home" },

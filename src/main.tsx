@@ -18,6 +18,10 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
+    path: "/los-más-vendidos",
+    element: <Category category="Los más vendidos" />,
+  },
+  {
     path: "/niñas",
     element: <Category category="Niñas" />,
   },

@@ -35,12 +35,12 @@ export const getVinilsByCategory = async (category: string) => {
 export const searchVinilos = async (searchTerm: string) => {
   const data = await fetchVinilos();
   const filteredVinils = data.vinilos.filter((vinil: { strVinil: string; nameVinil: string; }) =>
-    vinil.strVinil.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    vinil.nameVinil.toLowerCase().includes(searchTerm.toLowerCase())
+    vinil.strVinil.toLowerCase().includes(searchTerm.toLowerCase().trim()) ||
+    vinil.nameVinil.toLowerCase().includes(searchTerm.toLowerCase().trim())
   );
   return filteredVinils.map((vinil: { idVinil: number; strImg: string; nameVinil: string; strDescription: string; }) => ({
     id: vinil.idVinil,
-    image: vinil.strImg,
+    image: optimizeCloudinaryUrl(vinil.strImg, 400),
     name: vinil.nameVinil,
     description: vinil.strDescription,
     price: "Consultar precio"

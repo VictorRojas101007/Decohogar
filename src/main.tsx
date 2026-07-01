@@ -10,6 +10,7 @@ import Category from "./Routes/Category";
 import React from "react";
 import TermsAndConditions from "./Routes/TermsAndConditions";
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+import About from "./Routes/About";
 
 
 const router = createBrowserRouter([
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
   {
     path:"/terminos-y-condiciones",
     element: <TermsAndConditions/>
+  },
+  {
+    path: "/about",
+    element: <About />,
   }
 ]);
 

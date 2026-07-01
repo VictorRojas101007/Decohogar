@@ -31,7 +31,9 @@ const Footer = () => {
           <ul className="Footer_ul">
             <li className="FooterAboutUs__li">
               <NavLink className={"navLink"} to={"/terminos-y-condiciones"}> Condiciones de compra</NavLink></li>
-            <li className="FooterAboutUs__li">Quienes Somos</li>
+            <li className="FooterAboutUs__li">
+              <NavLink className={"navLink"} to={"/about"}> Quienes Somos</NavLink>
+            </li>
             <li className="FooterAboutUs__li">Misión</li>
           </ul>
         </div>

@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+
+.about-main-container {
+  background: linear-gradient(135deg, #efe2cf 0%, #e4d1b4 100%);
+  min-height: 100vh;
+  padding: 0rem 1rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.about-container {
+  width: min(1120px, 100%);
+  background-color: #f7efe4;
+  border-radius: 1.5rem;
+  box-shadow: 0 0.8rem 1.8rem rgba(93, 67, 57, 0.16);
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23827153' fill-opacity='0.06' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='15' cy='15' r='3'/%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+.about-hero,
+.about-grid {
+  position: relative;
+  z-index: 1;
+}
+
+.about-hero {
+  display: grid;
+  grid-template-columns: 1.4fr 0.9fr;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.about-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.8rem;
+  color: #8b6d4f;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.about-title {
+  font-family: "Dancing Script", cursive;
+  font-size: clamp(2.2rem, 3.2vw, 3.2rem);
+  color: #5d4339;
+  margin: 0 0 1rem;
+  text-shadow: 0.05rem 0.05rem 0 rgba(255, 255, 255, 0.75);
+}
+
+.about-description {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #4d3a2d;
+  margin: 0 0 1.4rem;
+}
+
+.about-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.about-btn {
+  text-decoration: none;
+  padding: 0.8rem 1.1rem;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-btn:hover {
+  transform: translateY(-2px);
+}
+
+.about-btn--primary {
+  background-color: #827153;
+  color: #fffaf5;
+  box-shadow: 0 0.3rem 0.7rem rgba(130, 113, 83, 0.2);
+}
+
+.about-btn--secondary {
+  background-color: #f1e5d7;
+  color: #5d4339;
+  border: 1px solid rgba(93, 67, 57, 0.15);
+}
+
+.about-hero__card {
+  background: linear-gradient(145deg, #fff9f2, #efe2cf);
+  border: 1px solid rgba(93, 67, 57, 0.12);
+  border-radius: 1rem;
+  padding: 1.4rem;
+  box-shadow: 0 0.25rem 0.8rem rgba(93, 67, 57, 0.08);
+}
+
+.about-hero__card h2 {
+  font-family: "Caveat", cursive;
+  font-size: 1.7rem;
+  color: #5d4339;
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+}
+
+.about-hero__card p {
+  color: #4d3a2d;
+  line-height: 1.7;
+  margin-bottom: 0.8rem;
+}
+
+.about-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: #4d3a2d;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.about-card {
+  background-color: rgba(255, 255, 255, 0.55);
+  border-radius: 0.95rem;
+  padding: 1.25rem;
+  border-left: 4px solid #827153;
+}
+
+.about-card h3 {
+  font-family: "Caveat", cursive;
+  font-size: 1.35rem;
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+  color: #5d4339;
+}
+
+.about-card p {
+  color: #4d3a2d;
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .about-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-main-container {
+    padding: 1rem 0.8rem 2rem;
+  }
+
+  .about-container {
+    padding: 1.3rem;
+  }
+
+  .about-actions {
+    flex-direction: column;
+  }
+
+  .about-btn {
+    text-align: center;
+  }
+}

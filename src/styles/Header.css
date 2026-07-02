@@ -219,6 +219,15 @@
     .nav-link{
     font-size: .8rem;
   }
-
 }
 
+@media (max-width: 21.9rem){
+
+      .nav-link{
+    font-size: .7rem;
+  }  
+    .nav-list {
+    gap: .7rem;
+    margin-top: .0625rem;
+  }
+}

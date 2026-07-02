@@ -154,7 +154,7 @@
   outline: none;
   background-color: rgba(241, 234, 222, 0.95);
   box-shadow: inset .125rem .125rem .3125rem rgba(0, 0, 0, 0.1);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #4d3a2d;
 }
 .search-button {
@@ -171,7 +171,8 @@
   margin: 0;
 }
 
-@media (max-width: 53.125rem) {
+
+@media  (max-width: 53.125rem) {
 
 .search-input{
   width: 6rem;
@@ -212,3 +213,12 @@
     font-size: 1rem;
   }
 }
+
+@media (max-width: 25.625rem){
+
+    .nav-link{
+    font-size: .8rem;
+  }
+
+}
+
